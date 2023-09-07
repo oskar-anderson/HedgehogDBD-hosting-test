@@ -9,7 +9,7 @@ import Table from './pages/Table';
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 
 root.render(
-    <HashRouter>
+    <BrowserRouter>
         <Routes>
             <Route path={`/`} element={<Draw />}></Route>
             <Route path={`/draw`} element={<Draw />}></Route>
@@ -18,5 +18,5 @@ root.render(
             <Route path={`/scripting`} element={<Scripting />}></Route>
             <Route path={`/system/info`} element={<Info />}></Route>
         </Routes>
-    </HashRouter>
+    </BrowserRouter>
 )
